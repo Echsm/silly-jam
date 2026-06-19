@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cvbosmgulmc46" path="res://scenes/ship.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dbe0isu0s2ic3" path="res://scenes/waterField.tscn" id="2_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://boufkpw5f4jc2" path="res://250px-0251Celebi.png" id="1_uwrxv"]
 
 [node name="Game" type="Node2D" unique_id=524159308]
 
