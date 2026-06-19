@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cvbosmgulmc46"]
+
+[ext_resource type="Script" uid="uid://d2h7yr6c4pvex" path="res://scenes/ship.gd" id="1_2gnfn"]
+[ext_resource type="Texture2D" uid="uid://coyu36myjm4r0" path="res://assets/icon.svg" id="1_q631a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yxers"]
+radius = 64.0
+height = 160.0
+
+[node name="Node2D" type="RigidBody2D" unique_id=1498366928]
+mass = 0.5
+gravity_scale = 0.0
+linear_damp = 0.1
+angular_damp = 0.1
+script = ExtResource("1_2gnfn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1371747716]
+scale = Vector2(0.90624994, 1)
+texture = ExtResource("1_q631a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1112653549]
+shape = SubResource("CapsuleShape2D_yxers")

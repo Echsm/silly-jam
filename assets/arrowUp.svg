@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="200"
+   width="200"
+   version="1.1"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <path
+     d="M 105.24835,74.019979 V 186.81998 H 93.948349 l -0.10714,-112.500001 0.21429,-30.10833 -23.68071,37.04229 -10.42644,-6.93396 39.65,-59.5 39.650001,59.5 -10.2411,5.98051 -23.7589,-36.67097 z"
+     stroke="#cccccc"
+     stroke-width="2"
+     fill="#0"
+     sodipodi:nodetypes="cccccccccccc" />
+</svg>
