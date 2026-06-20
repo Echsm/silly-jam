@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://cvbosmgulmc46"]
 
 [ext_resource type="Script" uid="uid://d2h7yr6c4pvex" path="res://scenes/ship.gd" id="1_2gnfn"]
-[ext_resource type="Texture2D" uid="uid://coyu36myjm4r0" path="res://assets/icon.svg" id="1_q631a"]
+[ext_resource type="Texture2D" uid="uid://c3j6wp6b0yi8f" path="res://assets/ship.png" id="2_2gnfn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yxers"]
-radius = 64.0
-height = 160.0
+radius = 27.0
+height = 96.0
 
 [node name="Node2D" type="RigidBody2D" unique_id=1498366928]
+rotation = 1.3683381
 mass = 0.5
 gravity_scale = 0.0
 linear_damp = 0.1
@@ -15,8 +16,12 @@ angular_damp = 0.1
 script = ExtResource("1_2gnfn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1371747716]
-scale = Vector2(0.90624994, 1)
-texture = ExtResource("1_q631a")
+position = Vector2(-0.12893522, 0.43552297)
+rotation = 1.5707964
+scale = Vector2(0.37465677, 0.18583211)
+texture = ExtResource("2_2gnfn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1112653549]
+position = Vector2(-2, -1)
+rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_yxers")
