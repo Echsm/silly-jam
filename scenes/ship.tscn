@@ -8,20 +8,18 @@ radius = 27.0
 height = 96.0
 
 [node name="Node2D" type="RigidBody2D" unique_id=1498366928]
-rotation = 1.3683381
-mass = 0.5
+mass = 0.041
 gravity_scale = 0.0
 linear_damp = 0.1
 angular_damp = 0.1
 script = ExtResource("1_2gnfn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1371747716]
-position = Vector2(-0.12893522, 0.43552297)
+position = Vector2(-4.7683716e-07, 2.3841858e-07)
 rotation = 1.5707964
-scale = Vector2(0.37465677, 0.18583211)
+scale = Vector2(0.26320052, 0.14681868)
 texture = ExtResource("2_2gnfn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1112653549]
-position = Vector2(-2, -1)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_yxers")

@@ -1,14 +1,22 @@
 [gd_scene format=3 uid="uid://dquyp2nugihj2"]
 
-[ext_resource type="PackedScene" uid="uid://cvbosmgulmc46" path="res://scenes/ship.tscn" id="2_lnu2h"]
+[ext_resource type="Shader" uid="uid://oh32yjsa0yqc" path="res://shaders/water.gdshader" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dbe0isu0s2ic3" path="res://scenes/waterField.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://63ni2gmosp8q" path="res://scenes/boat_spawner.tscn" id="4_lbhrr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8wxo0"]
+shader = ExtResource("2_lnu2h")
 
 [node name="Game" type="Node2D" unique_id=524159308]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=157589357]
 anchor_mode = 0
 
+[node name="ColorRect" type="ColorRect" parent="Camera2D" unique_id=1942786546]
+material = SubResource("ShaderMaterial_8wxo0")
+offset_right = 1153.0
+offset_bottom = 645.0
+
 [node name="WaterField" parent="." unique_id=1715627682 instance=ExtResource("2_yqjtg")]
 
-[node name="TestBoat" parent="." unique_id=1498366928 instance=ExtResource("2_lnu2h")]
-position = Vector2(543, 93)
+[node name="spawner" parent="." unique_id=717222798 instance=ExtResource("4_lbhrr")]
